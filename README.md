@@ -42,20 +42,6 @@
   </ul>
 </details>
 
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
-
 
 ### Key Features <a name="key-features"></a>
 
@@ -105,15 +91,14 @@ gem install
 
 To run the project, execute the following command:
 
-rails server
+npm install webpack webpack-cli --save-dev
 
 
 ### Run tests
 
 To run tests, run the following command:
 
-
-bin/rails test test/models/article_test.rb
+npm run dev
 
 
 ### Deployment
@@ -140,7 +125,6 @@ Github pages
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **Add List to your Todo-list**
 - [ ] **Ability to put the most neccessary task first**
