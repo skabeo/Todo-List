@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,900;1,400&display=swap');
+
+body {
+  background-color: rgb(227, 227, 227);
+  font-family: 'Lato', sans-serif;
+}
+
+p,
+hr,
+input {
+  margin: 0;
+}
+
+p {
+  padding: 5px 10px;
+}
+
+.add-list {
+  font-style: italic;
+  font-size: 13px;
+  color: #9a9a9a;
+}
+
+.clear {
+  text-align: center;
+  background-color: rgb(227, 227, 227);
+}
+
+label {
+  padding: 0 10px;
+}
+
+.list-line {
+  margin-top: 5px;
+}
+
+input {
+  margin-right: 14px;
+}
+
+.list-container {
+  margin-top: 5px;
+}
+
+li {
+  list-style: none;
+}
+
+.list {
+  background-color: #f7f7f7;
+  width: 50%;
+  margin: 0 auto;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+}
+
+.arrow-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fa-arrows-rotate {
+  padding-right: 10px;
+  color: #9a9a9a;
+  font-size: 11px;
+}
+
+.add-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-arrow {
+  height: 7px;
+  width: 7px;
+  margin-right: 10px;
+}
+
+.menu {
+  margin-left: auto;
+}
+
+.list-alignment {
+  display: flex;
+}
+
+#add-list {
+  background-color: #f7f7f7;
+  width: 100%;
+  border: none;
+  padding: 5px 10px;
+}
+
+#add-list::placeholder {
+  font-style: italic;
+}
+
+@media only screen and (min-width: 768px) {
+  .list {
+    width: 30%;
+  }
+}
