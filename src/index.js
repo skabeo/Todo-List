@@ -1,5 +1,7 @@
 import './style.css';
-import { addTask, deleteTask, editTask, saveTasks, tasks } from './script';
+import {
+  addTask, deleteTask, editTask, saveTasks, tasks,
+} from './script.js';
 import leftImage from './assets/left.png';
 import menuIcon from './assets/menu.png';
 import trash from './assets/trash.png';
@@ -33,7 +35,6 @@ function populateTodoList() {
       if (event.key === 'Enter') {
         event.preventDefault();
         const newDescription = taskDescription.textContent.trim();
-        console.log(`Editing task at index ${index} with new description: ${newDescription}`);
         editTask(index, newDescription);
         populateTodoList();
       }
@@ -49,13 +50,13 @@ function populateTodoList() {
       }
     });
 
-    // label.appendChild(checkbox);
-    // label.appendChild(document.createTextNode(task.description));
-
     const img = document.createElement('img');
     img.src = menuIcon;
     img.alt = 'menu';
     img.classList.add('menu');
+
+    const imgContainer = document.createElement('div');
+    imgContainer.classList.add('list-alignment');
 
     img.addEventListener('click', () => {
       const dust = new Image();
@@ -63,9 +64,9 @@ function populateTodoList() {
       dust.classList.add('dust');
 
       const listItems = document.querySelectorAll('.list-container');
-      listItems.forEach(item => {
+      listItems.forEach((item) => {
         item.style.backgroundColor = '';
-      })
+      });
 
       listItem.style.backgroundColor = '#fff9a6';
       listItem.style.margin = 0;
@@ -76,15 +77,11 @@ function populateTodoList() {
 
         dust.addEventListener('click', () => {
           deleteTask(index);
-          populateTodoList()
+          populateTodoList();
           saveTasks();
         });
       });
     });
-
-
-    const imgContainer = document.createElement('div');
-    imgContainer.classList.add('list-alignment');
 
     span.appendChild(taskDescription);
     label.appendChild(span);
