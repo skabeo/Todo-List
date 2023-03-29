@@ -28,6 +28,17 @@ p {
 
 label {
   padding: 0 10px;
+  width: 100%;
+}
+
+span {
+  display: flex;
+}
+
+.edit {
+  width: 100%;
+  outline: none;
+  cursor: text;
 }
 
 .list-line {
@@ -36,10 +47,6 @@ label {
 
 input {
   margin-right: 14px;
-}
-
-.list-container {
-  margin-top: 5px;
 }
 
 li {
@@ -57,6 +64,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 35px;
 }
 
 .fa-arrows-rotate {
@@ -81,8 +89,17 @@ li {
   margin-left: auto;
 }
 
+.dust {
+  margin-left: auto;
+  height: 20px;
+  width: 20px;
+  margin-right: 6.5px;
+}
+
 .list-alignment {
   display: flex;
+  height: 30px;
+  align-items: center;
 }
 
 #add-list {
@@ -90,10 +107,13 @@ li {
   width: 100%;
   border: none;
   padding: 5px 10px;
+  font-family: inherit;
+  font-style: italic;
 }
 
 #add-list::placeholder {
   font-style: italic;
+  font-family: inherit;
 }
 
 @media only screen and (min-width: 768px) {
