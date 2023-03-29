@@ -1,4 +1,4 @@
-const tasks = JSON.parse(localStorage.getItem('tasks'));
+const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
 function addTask(description) {
   tasks.push({ description, completed: false, index: tasks.length });
