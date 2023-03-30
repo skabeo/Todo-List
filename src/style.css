@@ -24,6 +24,18 @@ p {
 .clear {
   text-align: center;
   background-color: rgb(227, 227, 227);
+  width: 100%;
+  border: none;
+  height: 35px;
+  font-family: inherit;
+  font-size: 17px;
+  text-decoration: underline;
+  color: rgb(169, 161, 161);
+  cursor: pointer;
+}
+
+button:hover {
+  color: black;
 }
 
 label {
