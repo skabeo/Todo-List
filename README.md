@@ -54,7 +54,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- Todo-List(https://yourdeployedapplicationlink.com)
+- To be deployed soon. 🙂
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -83,29 +83,29 @@ Clone this repository to your desired folder:
 
 Install this project with:
 
-- cd my-project
-- gem install
+- cd Todo-list
+- npm install
 
 
 ### Usage
 
 To run the project, execute the following command:
 
-- npm install webpack webpack-cli --save-dev
+- npm start
 
 
 ### Run tests
 
 To run tests, run the following command:
 
-- npm run dev
+- npm run test
 
 
 ### Deployment
 
 You can deploy this project using:
 
-- Github pages
+- run build
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
