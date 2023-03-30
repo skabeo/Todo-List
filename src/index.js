@@ -1,10 +1,26 @@
 import './style.css';
-import {
-  addTask, deleteTask, editTask, saveTasks, tasks,
-} from './script.js';
 import leftImage from './assets/left.png';
 import menuIcon from './assets/menu.png';
 import trash from './assets/trash.png';
+
+let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+
+function addTask(description) {
+  tasks.push({ description, completed: false, index: tasks.length });
+}
+
+function deleteTask(index) {
+  tasks.splice(index, 1);
+}
+
+function saveTasks() {
+  localStorage.setItem('tasks', JSON.stringify(tasks));
+}
+
+function editTask(index, newDescription) {
+  tasks[index].description = newDescription;
+  saveTasks();
+}
 
 function populateTodoList() {
   const todoList = document.getElementById('todo-list');
@@ -22,6 +38,12 @@ function populateTodoList() {
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
     checkbox.checked = task.completed;
+    if (checkbox.checked) {
+      taskDescription.style.textDecoration = 'line-through';
+    } else {
+      taskDescription.style.textDecoration = 'none';
+    }
+    saveTasks();
     checkbox.addEventListener('change', () => {
       task.completed = !task.completed;
       populateTodoList();
@@ -110,10 +132,17 @@ input.addEventListener('keydown', (event) => {
   }
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  populateTodoList();
-});
-
 const arrow = document.querySelector('#left-arrow');
 arrow.classList.add('left-arrow');
 arrow.src = leftImage;
+
+const clearButton = document.querySelector('.clear');
+clearButton.addEventListener('click', () => {
+  tasks = tasks.filter((task) => !task.completed);
+  saveTasks();
+  populateTodoList();
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  populateTodoList();
+});
