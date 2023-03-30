@@ -132,15 +132,13 @@ input.addEventListener('keydown', (event) => {
   }
 });
 
-
-
 const arrow = document.querySelector('#left-arrow');
 arrow.classList.add('left-arrow');
 arrow.src = leftImage;
 
 const clearButton = document.querySelector('.clear');
 clearButton.addEventListener('click', () => {
-  tasks = tasks.filter(task => !task.completed);
+  tasks = tasks.filter((task) => !task.completed);
   saveTasks();
   populateTodoList();
 });
@@ -148,6 +146,3 @@ clearButton.addEventListener('click', () => {
 document.addEventListener('DOMContentLoaded', () => {
   populateTodoList();
 });
-
-
-
