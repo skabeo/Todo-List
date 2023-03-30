@@ -28,7 +28,7 @@
 # 📖 Todo List<a name="about-project"></a>
 
 
-**Todo List** is a boilerplate for webpack service.
+**Todo List** provides a simple and intuitive interface for users to add and remove items from their to-do list. With its easy-to-use functionality, users can stay organized and on top of their tasks.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -75,42 +75,42 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 
-cd my-folder
-git clone https://github.com/skabeo/Todo-List.git
+- cd my-folder
+- git clone https://github.com/skabeo/Todo-List.git
 
 
 ### Install
 
 Install this project with:
 
-cd my-project
-gem install
+- cd my-project
+- gem install
 
 
 ### Usage
 
 To run the project, execute the following command:
 
-npm install webpack webpack-cli --save-dev
+- npm install webpack webpack-cli --save-dev
 
 
 ### Run tests
 
 To run tests, run the following command:
 
-npm run dev
+- npm run dev
 
 
 ### Deployment
 
 You can deploy this project using:
 
-Github pages
+- Github pages
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
 
 👤 **Spencer Okyere**
