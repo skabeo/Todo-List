@@ -54,7 +54,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- To be deployed soon. 🙂
+- [Live Demo](https://skabeo.github.io/Todo-List/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
